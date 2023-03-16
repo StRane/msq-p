@@ -1,0 +1,11 @@
+name = "mosq"
+type = "payment_customization"
+api_version = "2023-04"
+
+[build]
+command = "cargo wasi build --release"
+path = "target/wasm32-wasi/release/mosq.wasm"
+
+[ui.paths]
+create = "/"
+details = "/"
